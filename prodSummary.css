@@ -1,0 +1,12 @@
+body{
+    background-color: whitesmoke;
+    font-family:'Courier New', Courier, monospace;
+}
+
+table{
+    margin-left: 22.5%;
+}
+
+tr{
+    text-align: center;
+}

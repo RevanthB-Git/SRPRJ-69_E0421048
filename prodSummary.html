@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Summary</title>
+    <link href="prodSummary.css" rel="stylesheet">
+</head>
+<body>
+    <h3 align="center">Productivity Summary</h3>
+    <h4><strong>Overview</strong></h4>
+    <table border="1px 1px solid black" width="55%" height="30%">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Task Name</th>
+                <th>Task Description</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="uid"> </td>
+                <td id="tname"> </td>
+                <td id="tdesc"> </td>
+                <td id="date"> </td>
+                <td id="time"> </td>
+            </tr>
+            <tr>
+                <td id="uid1"> </td>
+                <td id="tname1"> </td>
+                <td id="tdesc1"> </td>
+                <td id="date1"> </td>
+                <td id="time1"> </td>
+            </tr>
+            <tr>
+                <td id="uid2"> </td>
+                <td id="tname2"> </td>
+                <td id="tdesc2"> </td>
+                <td id="date2"> </td>
+                <td id="time2"> </td>
+            </tr>
+        </tbody>
+    </table>
+    <h4><b>Statistics</b></h4>
+    <table border="1px 1px solid black" width="55%" height="30%">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Average Time Spent</td>
+                <td id="avg"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    var uid = document.getElementById("uid");
+    var tname = document.getElementById("tname");
+    var tdesc = document.getElementById("tdesc");
+    var date = document.getElementById("date");
+    var time = document.getElementById("time");
+    uid.innerHTML = parseInt("1");
+    tname.innerHTML = "Login Page";
+    tdesc.innerHTML = "Create & Deploy a Login Page";
+    date.innerHTML = "06/10/2024";
+    time.innerHTML = parseInt("180");
+    var uid1 = document.getElementById("uid1");
+    var tname1 = document.getElementById("tname1");
+    var tdesc1 = document.getElementById("tdesc1");
+    var date1 = document.getElementById("date1");
+    var time1 = document.getElementById("time1");
+    uid1.innerHTML = parseInt("2");
+    tname1.innerHTML = "About Page";
+    tdesc1.innerHTML = "Create & Deploy an About Page";
+    date1.innerHTML = "06/13/2024";
+    time1.innerHTML = parseInt("95");
+    var uid2 = document.getElementById("uid2");
+    var tname2 = document.getElementById("tname2");
+    var tdesc2 = document.getElementById("tdesc2");
+    var date2 = document.getElementById("date2");
+    var time2 = document.getElementById("time2");
+    uid2.innerHTML = parseInt("3");
+    tname2.innerHTML = "Signup Page";
+    tdesc2.innerHTML = "Create & Deploy a Signup Page";
+    date2.innerHTML = "06/15/2024";
+    time2.innerHTML = parseInt("100");
+
+    overall = parseInt(time.innerHTML) + parseInt(time1.innerHTML) + parseInt(time2.innerHTML);
+    var avg = document.getElementById("avg");
+    avg.innerHTML = overall / 3;
+</script>
+</html>

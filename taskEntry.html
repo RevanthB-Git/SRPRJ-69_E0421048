@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Entry</title>
+    <link href="taskEntry.css" rel="stylesheet">
+</head>
+<body>
+    <h2 align="center">Work-from-Home Productivity Tracker</h2>
+    <form action="/entry" method="POST">
+        <table border="1px 1px solid black" width="55%" height="80%">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Input</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>User ID</label>
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Task Name</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Task Description</label>
+                    </td>
+                    <td>
+                        <textarea></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Date</label>
+                    </td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Time Spent (in minutes)</label>
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit" id="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>
